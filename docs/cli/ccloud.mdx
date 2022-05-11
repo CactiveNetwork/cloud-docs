@@ -1,0 +1,36 @@
+---
+---
+
+# cCloud
+
+Using the `ccloud-setup` tool to initialize a new project.
+
+:::info
+The `ccloud` tool is still under development.
+There may be bugs and missing features, which [you can help](https://github.com/CactiveNetwork/cloud-docs/issues) to remedy!
+:::
+
+## Install cCloud
+
+```sh
+$ npm install --global ccloud
+```
+
+## Initialize in the current directory
+```sh
+$ ccloud init
+```
+
+:::tip
+After running the init command, you will need to connect your account if not already connected, and select the project you wish to target.
+:::
+
+## Deploy
+To deploy your project, or updates to said project, run the following command:
+
+```sh
+$ ccloud deploy
+```
+
+This runs the `build_command` script, and uploads the resulting `build_file`.
+These options are defined in your [cloud.config.json](/docs/cloud-config)

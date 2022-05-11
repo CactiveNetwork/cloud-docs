@@ -1,0 +1,15 @@
+---
+---
+
+# cCloud config file
+
+Fields available in the `cloud.config.json` file.
+
+| Field                   | Description                                          | Required | Default Value   |
+| ----------------------- | ---------------------------------------------------- | -------- | --------------- |
+| `project_id`            | The project id linked to the current project.        | Yes      | `undefined`     |
+| `api_token`             | The API token used to make requests to cloud.        | Yes      | `undefined`     |
+| `build_command`         | The command used to build the project.               | No       | `npm run build` |
+| `build_file`            | The zip file the build command produces.             | No       | `build.zip`     |
+| `cloud_paths`           | Relative positions to folders cloud will draw from . | No       | `{}`            |
+| `cloud_paths.functions` | Location of serverless functions folder.             | No       | `functions`     |

@@ -1,0 +1,29 @@
+---
+---
+
+# Cloud Setup
+
+Using the `ccloud-setup` tool to initialize a new project.
+
+:::caution
+
+cloud-setup is still in early beta.
+This tool isn't recommended for use at the moment.
+
+:::
+
+## Initialize a new project
+
+```sh
+$ npx ccloud-setup <location> --template=<template>
+```
+
+### Args
+
+| Argument     | Description                                                                    |
+| ------------ | ------------------------------------------------------------------------------ |
+| `<location>` | The location to create the project in. Use `.` to denote the current directory |
+| `--template` | The [template](#templates) to use.                                             |
+
+### Templates
+* `react` - A basic create-react-app project.
